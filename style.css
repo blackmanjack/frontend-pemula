@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.headbar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 27, 204);
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background:white;
+}
+
+.right {
+    width: 600px;
+    margin: 35px 0;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.buku {
+    display: flex;
+    justify-content: center;
+}
+
+#belum , #sudah {
+    margin: 5px;
+    border: none
+}
+
+.input_section {
+    margin-top: 35px;
+    width: 400px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input_section  h2 {
+    text-align: center;
+    color: rgb(189, 27, 204);
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section button {
+    background-color: rgb(189, 27, 204);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section label {
+    color: rgb(189, 27, 204);
+    font-weight: bold;
+}
+
+.input_section .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section label {
+    color: rgb(189, 27, 204);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.search_section h2 {
+    color: rgb(189, 27, 204);
+}
+
+.search_section form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section button {
+    background-color: rgb(189, 27, 204);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf h2 {
+    color: rgb(189, 27, 204);
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf h3,p {
+    margin: 8px 0;
+}
+
+.book_shelf button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.green:hover {
+    background-color: rgb(3, 61, 3);
+}
+
+.red {
+    background-color: darkred;
+    color: white;
+}
+
+.red:hover {
+    background-color: rgb(87, 1, 1);
+}
+
+#bookSubmit:hover {
+    background-color: rgb(123, 16, 133);
+}
+
+#searchSubmit:hover {
+    background-color: rgb(123, 16, 133);
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background:black;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 16px;
+        background:black;
+        color: white;
+    }
+    .buku {
+        width: 300px;
+        display: block;
+        justify-content: center;
+    }
+    .right {
+        width: 400px;
+    }
+    .search_section {
+        width: 300px;
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
+}
